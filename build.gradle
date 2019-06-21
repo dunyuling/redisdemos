@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'com.rc'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 12
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'redis.clients:jedis:3.0.1'
+    compile 'org.springframework:spring-context:5.1.6.RELEASE'
+}
